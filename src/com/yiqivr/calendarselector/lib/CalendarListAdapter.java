@@ -54,7 +54,7 @@ public class CalendarListAdapter extends BaseAdapter {
 		View v = arg1;
 		ViewHolder holder = null;
 		if (v == null) {
-			v = mInflater.inflate(R.layout.calendar, null);
+			v = mInflater.inflate(R.layout.calendar, arg2, false);
 			holder = new ViewHolder();
 			holder.yearAndMonth = (TextView) v.findViewById(R.id.tv_year_month);
 			holder.calendarGrid = (NoScrollGridView) v.findViewById(R.id.gv_calendar_layout);

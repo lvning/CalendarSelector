@@ -1,7 +1,5 @@
 package com.yiqivr.calendarselector;
 
-import java.util.Calendar;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,7 +20,6 @@ public class MainActivity extends Activity {
 	public void jump(View v) {
 		EditText et = (EditText) findViewById(R.id.et_input);
 		orderEt = (EditText) findViewById(R.id.et_order);
-		Calendar c = Calendar.getInstance();
 		int days = Integer.valueOf(et.getText().toString());
 		String order = orderEt.getText().toString();
 		Intent i = new Intent(MainActivity.this, CalendarSelectorActivity.class);

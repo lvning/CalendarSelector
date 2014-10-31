@@ -54,7 +54,7 @@ public class CalendarAdapter extends BaseAdapter {
 		View v = arg1;
 		ViewHolder holder = null;
 		if (v == null) {
-			v = mInflater.inflate(R.layout.calendar_item, null);
+			v = mInflater.inflate(R.layout.calendar_item, arg2, false);
 			holder = new ViewHolder();
 			holder.tv = (TextView) v.findViewById(R.id.tv_calendar_item);
 			v.setTag(holder);
