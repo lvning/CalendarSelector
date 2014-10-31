@@ -1,0 +1,8 @@
+<resources>
+
+    <color name="calendar_disable_color">#DDDDDD</color>
+    <color name="calendar_enable_color">#666666</color>
+    <color name="calendar_threeday_color">#FA383A</color>
+    <color name="white">#fff</color>
+
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="calendar_item_order_day_size">3.5sp</dimen>
+    <dimen name="calendar_item_nonorder_day_size">5sp</dimen>
+
+</resources>

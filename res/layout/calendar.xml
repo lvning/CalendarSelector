@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/tv_year_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/calendar_enable_color"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            style="@style/calendar_week_item_style"
+            android:text="@string/sunday" />
+
+        <TextView
+            style="@style/calendar_week_item_style"
+            android:text="@string/monday" />
+
+        <TextView
+            style="@style/calendar_week_item_style"
+            android:text="@string/tuesday" />
+
+        <TextView
+            style="@style/calendar_week_item_style"
+            android:text="@string/wednesday" />
+
+        <TextView
+            style="@style/calendar_week_item_style"
+            android:text="@string/thursday" />
+
+        <TextView
+            style="@style/calendar_week_item_style"
+            android:text="@string/friday" />
+
+        <TextView
+            style="@style/calendar_week_item_style"
+            android:text="@string/saturday" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/calendar_threeday_color" />
+
+    <com.yiqivr.calendarselector.lib.NoScrollGridView
+        android:id="@+id/gv_calendar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="7"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" />
+
+</LinearLayout>
