@@ -29,3 +29,21 @@
 			orderEt.setText(orderInfo);
 		}
 	}
+	
+	
+---
+	
+3 如果需要转换为Calendar
+
+		// 正确转换方法：
+		String[] info = orderInfo.split("#");
+		Calendar c = Calendar.getInstance();
+		c.set(Integer.valueOf(info[0]), Integer.valueOf(info[1]) - 1, Integer.valueOf(info[2]));
+		
+
+// 错误转换方法（因为2月没有30天）：
+
+~~c.set(Integer.valueOf(info[0]), Integer.valueOf(info[1]), Integer.valueOf(info[2]));~~
+
+~~c.add(Calendar.MONTH, -1);~~
+			

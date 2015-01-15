@@ -34,6 +34,16 @@ public class MainActivity extends Activity {
 		if (requestCode == 1 && resultCode == RESULT_OK) {
 			String orderInfo = data.getStringExtra(CalendarSelectorActivity.ORDER_DAY);
 			orderEt.setText(orderInfo);
+			/* *****注意*****
+			// 如需转换为Calendar
+			// 正确转换方法（因为2月没有30天）：
+			String[] info = orderInfo.split("#");
+			Calendar c = Calendar.getInstance();
+			c.set(Integer.valueOf(info[0]), Integer.valueOf(info[1]) - 1, Integer.valueOf(info[2]));
+			// 错误转换方法：
+			c.set(Integer.valueOf(info[0]), Integer.valueOf(info[1]), Integer.valueOf(info[2]));
+			c.add(Calendar.MONTH, -1);
+			**/
 		}
 	}
 
